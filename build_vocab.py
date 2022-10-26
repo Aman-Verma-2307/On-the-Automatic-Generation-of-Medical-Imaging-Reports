@@ -4,14 +4,14 @@ import argparse
 from collections import Counter
 
 
-class Vocabulary(object):
+class Vocabulary(object): 
     """Simple vocabulary wrapper."""
     def __init__(self):
         self.word2idx = {}
         self.idx2word = {}
         self.idx = 0
 
-    def add_word(self, word):
+    def add_word(self, word): # Function to add 
         if not word in self.word2idx:
             self.word2idx[word] = self.idx
             self.idx2word[self.idx] = word
